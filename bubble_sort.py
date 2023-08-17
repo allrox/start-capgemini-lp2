@@ -3,12 +3,14 @@ from random import randrange
 # Definindo uma lista para teste
 lista = []
 
-def elementosAleatorios(y):
+
+def elementos_aleatorios(y):
     for x in range(y):
-        lista.append(randrange(0,1000))
+        # Adiciona à lista um número aleatório na faixa entre 'start' e 'stop'
+        lista.append(randrange(0, 5000))
 
 
-elementosAleatorios(3)
+elementos_aleatorios(30)
 print(f"Lista com os elementos na ordem original {lista}")
 
 # Captura o tamanho da lista
@@ -29,3 +31,4 @@ for i in range(n):
 
 
 print(f"Lista com elementos reordenados {lista}")
+print(f"Foram ordenados {n} elementos.")
